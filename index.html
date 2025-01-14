@@ -6,8 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+	<script src="scripts.js"></script>
+  <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
 </head>
 <body>
-	<script src="scripts.js"></script>
+	<div>
+		<p></p>
+		<input type="text" id="something" placeholder="Do Somethign Here..." />
+		<button py-click="do_something">Do Something</button>
+		<div id="output"></div>
+    <script type="py" src="main.py" config="pyscript.json"></script>
+	</div>	
 </body>
 </html>
